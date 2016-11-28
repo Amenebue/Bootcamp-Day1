@@ -1,4 +1,4 @@
-function getPrime(n) {
+function getPrimes(n) {
   var prime_number = [ ];
     for (counter = 2; counter <= n; counter++) {
     
@@ -17,5 +17,5 @@ function getPrime(n) {
 return prime_number;
 }
 
-console.log(getPrime(100))
+console.log(getPrimes(100))
 

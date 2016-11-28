@@ -3,7 +3,6 @@ module.exports={
     	this.name = name;
     	this.model = model;
     	this.vehicle_type = vehicle_type;
-
     }
 
 }
@@ -13,7 +12,7 @@ module.exports={
     else:
       	this.num_of_doors = 4
 
-    if 	this.vehicle_type == 'trailer'{
+    if 	this.vehicle_type =='trailer'{
        	this.num_of_wheels = 8
     }
     else:
@@ -22,7 +21,7 @@ module.exports={
 
   function is_saloon(this){
     if this.vehicle_type is not 'trailer'{
-        this.vehicle_type == 'saloon'
+        this.vehicle_type =='saloon'
         return True
     return False
     }
@@ -30,8 +29,10 @@ module.exports={
     if moving_speed == 3{
       Car.speed = 1000
     }
-    else if moving_speed == 7{
+    else if moving_speed ==7{
       Car.speed = 77
+      this.speed = '0 km/h';
+
     }
 
     
